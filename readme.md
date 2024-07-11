@@ -1,1 +1,1 @@
-plataforma de perguntas e respostas feito em express 
+plataforma de perguntas e respostas feito em express, myslq e EJS

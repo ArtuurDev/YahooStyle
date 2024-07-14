@@ -1,5 +1,5 @@
 Visão Geral do Projeto:
-
+ 
 .Este projeto tem como objetivo criar uma plataforma de perguntas e respostas utilizando Express.js, o motor de templates EJS, e banco de dados MySQL. A plataforma permite aos usuários fazer perguntas, fornecer respostas e interagir com o conteúdo de outros usuários.
 
 Estado Atual:

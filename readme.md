@@ -16,8 +16,12 @@ Tecnologias Utilizadas:
 
 
 
-Confira o como está o desenvolvimento do projeto
 
+
+
+
+
+Confira o como está o desenvolvimento do projeto
 Instalação e Uso
 
 

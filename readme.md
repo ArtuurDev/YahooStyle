@@ -6,7 +6,7 @@ Estado Atual:
 
    .O projeto está atualmente em fase de desenvolvimento ativo e é baseado em um curso utilizado para fins de estudo.
 
-Tecnologias Utilizadas
+Tecnologias Utilizadas:
 
    .Express.js: Framework backend para lidar com lógica do servidor e roteamento.
 

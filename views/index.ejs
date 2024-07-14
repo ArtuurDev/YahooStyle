@@ -4,20 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>YahrooStyle</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Bem vindo</h1>
-    <hr>
-    <h3>lista de perguntas</h3>
 
-    <p>nome:<%= nome%></p>
-    <p>trabalho:<%= trabalho%></p>
-    <p>nome:<%= nomeCaixaPNC%></p>
-
-    
-    <% if (nome === 'Artur') {%>
-        <h1>deu certo</h1>
-    <%}%>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <h3>Realizar Pergunta</h3>
+            </div>
+            <div class="card-body">
+                <form>
+                    <label>Titulo</label>
+                    <input type="text" placeholder="título" class= "form-control">
+                    <br>
+                    <label>Desciçao</label>
+                    <textarea placeholder="Descreva sua pergunta" class="form-control"></textarea>
+                    <br>
+                    <button class="btn btn-success">Perguntar</button>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
+
+<!-- script do css do bootstrap-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!--arquivo javascript do bootstrap -->
+<script src='/js/bootstrap.min.js'></script>
 </html>

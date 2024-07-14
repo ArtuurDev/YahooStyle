@@ -4,16 +4,11 @@ const app = express()
 
 app.set('view engine', 'ejs')
 
-app.get('/yahroo', (req, res) => {
-    const nome = 'Artur'
-    const trabalho = 'entregador'
-    res.render('index', {
+app.use(express.static('public'))
 
-        nome: nome,
-        trabalho: trabalho,
-        nomeCaixaPNC: 'mesmo nome que o meu, infelizmente'
+app.get('/', (req, res) => {
 
-    })
+    res.render('index')
     
     
 })

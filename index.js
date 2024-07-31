@@ -27,9 +27,9 @@ app.use(express.json())
 
 
 
-app.get('/', (req, res) => {
+app.get('/index', (req, res) => {
 
-    Pergunta.findAll({raw: true}).then(perguntas => {
+    Pergunta.findAll({raw: true, order: [['id', 'DESC']]} ).then(perguntas => {
         res.render('index', {
             perguntas: perguntas
         })
@@ -38,7 +38,7 @@ app.get('/', (req, res) => {
     
     
 })
-app.get('/perguntas', (req, res) => {
+app.get('/perguntar', (req, res) => {
 
     res.render('perguntar')
 })
@@ -52,6 +52,26 @@ app.post('/salvarpergunta', (req, res) => {
         description: descricao
     }).then(() => {
         res.redirect('/')
+    })
+})
+
+app.get('/pergunta/:id', (req, res) => {
+    
+    const id = req.params.id
+
+    Pergunta.findOne({
+        where: {
+            id: id
+        }
+    }).then((pergunta) => {
+
+        if (pergunta != undefined) {
+           res.render('pergunta', {
+            pergunta: pergunta
+           })
+        }
+    }).catch(() =>{
+        res.redirect('/index')
     })
 })
 

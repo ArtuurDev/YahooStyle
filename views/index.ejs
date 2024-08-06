@@ -25,7 +25,14 @@
                 <div class="card-body">
                 </div>
                 <div class="card-footer text-end">
-                    <button class="btn btn-primary">Responder</button>
+                    <a href="/pergunta/<%=pergunta.id%>">
+                        <button class="btn btn-primary">Responder</button>
+                    </a>
+                    <hr>
+                    <a href="/visu/<%=pergunta.id%>">
+                        <button class="btn btn-successn">Ver respostas</button>
+                    </a>
+                    
                 </div>
             </div>
         <% }) %>

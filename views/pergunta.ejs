@@ -10,17 +10,25 @@
 <body>
     
     <nav class="navbar navbar-light bg-primary" >
-        <a class="navbar-brand" href="/index">
+        <a class="navbar-brand" href="/">
             <button class= 'btn btn-success'>home</button>
         </a>
     </nav>
 
 
-    <div class="container">
-        <hr>
-        <h1><%= pergunta.title %></h1>
-        <p><%= pergunta.description%></p>
-    </div>
+    
+<div class="container">
+    <hr>
+    <h1><%= pergunta.title %></h1>
+    <p><%= pergunta.description%></p>
+    <form method= 'post' action="/salvarresposta">
+        <input type="hidden" name="respostaId" value="<%=pergunta.id%>">
+        <h1>Responder</h1>
+                <textarea placeholder="resposta" class="form-control" name="corpo"></textarea>
+                <br>
+                <button class="btn btn-primary">Responder</button>
+    </form>
+    
 
 </body>
 </html>

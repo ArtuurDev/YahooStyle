@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <title><%= pergunta.title %></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #007bff;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1rem;
+            color: #333;
+            line-height: 1.5;
+        }
+        .respostas {
+            margin-top: 20px;
+        }
+        .respostas h3 {
+            color: #28a745;
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-light bg-primary">
+        <a class="navbar-brand" href="/perguntar">
+            <button class='btn btn-success'>Realizar perguntas</button>
+            <a href="/">
+                <button class="btn btn-success">Home</button>
+            </a>
+        </a>
+    </nav>
+    
+    <div class="container">
+        <h1><%= pergunta.title %></h1>
+        <p><%= pergunta.description %></p>
+
+        <h1>Respostas</h1>
+        <div class="respostas">
+             
+                <h3><%= resposta.corpo %></h3>
+            
+        </div>
+    </div>
+</body>
+</html>

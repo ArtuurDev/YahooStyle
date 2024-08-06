@@ -4,7 +4,7 @@ Visão Geral do Projeto:
 
 Estado Atual:
 
-.O projeto está atualmente completo ativo e é baseado em um curso utilizado para fins de estudo.
+.O projeto está atualmente completo e é baseado em um curso utilizado para fins de estudo.
 
 Tecnologias Utilizadas:
 

@@ -39,19 +39,7 @@ O projeto está atualmente completo e é baseado em um curso utilizado para fins
 ### Tela de Respostas
 ![Tela de Respostas](images/respostas.png)
 
-## Contribuição
 
-Contribuições são sempre bem-vindas! Sinta-se à vontade para fazer um fork do repositório e enviar um pull request.
-
-1. Faça um fork do projeto.
-2. Crie uma branch para sua feature (`git checkout -b minha-feature`).
-3. Commit suas mudanças (`git commit -m 'Adiciona minha feature'`).
-4. Envie para a branch (`git push origin minha-feature`).
-5. Abra um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a MIT License. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ## Contato
 
